@@ -1,4 +1,4 @@
-import Contact, { IContact } from "../models/Contact";
+import Contact, { IContact } from "../models/contact";
 
 export const getContacts = async (): Promise<IContact[]> => {
   return Contact.find();
