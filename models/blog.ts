@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document, Types } from 'mongoose';
-import { IUser } from '../models/user';
+import { IUser } from '../models/User';
 
 export interface IBlog extends Document {
   title: string;
