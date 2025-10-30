@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document, Types } from 'mongoose';
-import { IUser } from '../models/user';
+import { IUser } from '../models/User';
 import { IBlog } from '../models/blog';
 
 export interface IComment extends Document {
