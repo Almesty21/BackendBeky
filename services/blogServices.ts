@@ -1,7 +1,7 @@
 import { Types } from 'mongoose';
 import Blog, { IBlog } from '../models/blog';
 import Comment, { IComment } from '../models/comment';
-import User, { IUser } from '../models/user';
+import User, { IUser } from '../models/User';
 import {
   CreateBlogPayload,
   UpdateBlogPayload,
