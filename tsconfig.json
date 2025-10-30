@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "outDir": "../dist",
-    "rootDir": "./",
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "../dist",  // Output directory outside of src
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"], 
-  "exclude": ["node_modules", "../dist"]
+  "include": ["**/*.ts"],  // Include all .ts files in the src directory
+  "exclude": ["node_modules"]  // Exclude node_modules
 }
