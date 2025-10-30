@@ -8,7 +8,9 @@ export const connectDB = async (): Promise<void> => {
       throw new Error("MONGO_URI not found in environment variables");
     }
 
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI, {
+    serverSelectionTimeoutMS: 5000000000 // Adjust the timeout as needed
+  });
     console.log(chalk.green("✅ MongoDB connection established"));
   } catch (error: any) {
     console.error(chalk.red(`❌ MongoDB connection failed: ${error.message}`));
